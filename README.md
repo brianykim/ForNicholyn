@@ -5,7 +5,8 @@ ForNicholyn
 
 #MAKE SURE YOU HAVE THESE INSTALLED
 ###rvm (which you should have from that intro part to the rails work shop)
-###rvm install ruby2.0.0
+###rvm get stable
+###rvm install 2.0.0
 ###(you might have to use /bin/bash --login IN ORDER TO LOG IN TO RVM)
 ###rvm use 2.0
 ###gem install jekyll

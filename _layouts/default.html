@@ -7,14 +7,27 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/assets/css/syntax.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
 
     </head>
     <body>
 
+        <div id="home">
+          <h1>Things and such</h1>
+            <ul class="posts">
+              {% for post in site.posts %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+    
+            </ul>
+        </div>
         <div class="container">
           <div class="site">
             <div class="header">

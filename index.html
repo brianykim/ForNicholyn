@@ -1,10 +1,14 @@
 ---
-layout: default
+layout: herounit
 title: Hey Nicholyn Chen!
 ---
 
 <div class="jumbotron">
 	<h1>HEY THERE NICHOLYN CHEN</h1>
 	<p>Curious as to what this is?</p>
-	<p><a class = "btn btn-primary btn-large">UNWRAP YOUR PRESENT!</a></p>
+	{% for post in site.posts %}
+	{% if post.title == "home" %}
+	<p><a class = "btn btn-primary btn-large"href="{{ post.url }}">UNWRAP YOUR PRESENT!</a></p>
+	{% endif %}
+	{% endfor %}
 </div>
